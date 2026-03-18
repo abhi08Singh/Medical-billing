@@ -3,152 +3,616 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Remote Medical Billing & RCM Services for Behavioral & Mental Health Clinics</title>
-
-<meta name="description" content="HIPAA-trained remote medical billing and RCM services for behavioral and mental health clinics across the United States. Clean claims, AR follow-up, and denial management.">
-
-<meta name="keywords" content="remote medical billing services, behavioral health billing, mental health billing, RCM services, AR follow up, denial management, US medical billing contractor">
-
+<title>Abhishek Kumar | Revenue Integrity Consultant</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#1f2937;
-  background:#ffffff;
-}
-h1,h2,h3{margin-bottom:12px}
-p, li{line-height:1.7}
-a{text-decoration:none;color:#2563eb}
-.container{max-width:1150px;margin:auto;padding:0 20px}
-section{padding:80px 0}
-.btn{
-  display:inline-block;
-  background:#2563eb;
-  color:#fff;
-  padding:14px 26px;
-  border-radius:6px;
-  margin-top:15px;
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-}
-.card{
-  background:#f8fafc;
-  padding:28px;
-  border-radius:14px;
-  box-shadow:0 8px 22px rgba(0,0,0,.06);
-}
-.badge{
-  display:inline-block;
-  background:#e0f2fe;
-  color:#0369a1;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:13px;
-  margin:4px;
-}
-header{
-  background:linear-gradient(120deg,rgba(15,23,42,.92),rgba(2,6,23,.96)),
-  url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=80')
-  center/cover no-repeat;
-}
-header h1, header p{color:#ffffff}
-footer{
-  background:#020617;
-  color:#cbd5f5;
-  text-align:center;
-  padding:30px 20px;
-  font-size:14px;
-}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+  :root {
+    --ink: #0f0f0e;
+    --ink-soft: #3a3a38;
+    --ink-muted: #7a7a76;
+    --paper: #f7f5f0;
+    --paper-warm: #ede9e1;
+    --accent: #1a4a3a;
+    --accent-light: #2d7a5f;
+    --accent-pale: #e8f0ed;
+    --rule: #d4cfc6;
+    --red: #c0392b;
+  }
+ 
+  html { scroll-behavior: smooth; }
+ 
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+ 
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 0 48px;
+    height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; letter-spacing: 0.01em;
+  }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a {
+    font-size: 13px; font-weight: 500; letter-spacing: 0.06em;
+    text-transform: uppercase; text-decoration: none;
+    color: var(--ink-soft);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent-light); }
+ 
+  /* HERO */
+  .hero {
+    margin-top: 60px;
+    padding: 100px 48px 80px;
+    max-width: 1100px;
+    margin-left: auto; margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .hero-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent-light);
+    margin-bottom: 24px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-label::before {
+    content: ''; display: block;
+    width: 32px; height: 1px; background: var(--accent-light);
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin-bottom: 28px;
+    color: var(--ink);
+  }
+  .hero h1 em {
+    font-style: italic; color: var(--accent-light);
+  }
+  .hero-sub {
+    font-size: 17px; color: var(--ink-soft);
+    line-height: 1.7; margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--accent);
+    color: #fff; text-decoration: none;
+    padding: 14px 28px; font-size: 14px; font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-cta:hover { background: var(--accent-light); transform: translateY(-1px); }
+  .hero-cta-arrow { font-size: 18px; }
+ 
+  .hero-stats {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 2px; background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat {
+    background: var(--paper);
+    padding: 32px 28px;
+  }
+  .stat-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px; line-height: 1;
+    color: var(--accent); margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 13px; color: var(--ink-muted);
+    font-weight: 400; line-height: 1.4;
+  }
+ 
+  /* SECTION COMMON */
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 48px;
+    border-top: 1px solid var(--rule);
+  }
+  .section-header {
+    display: flex; align-items: baseline; gap: 20px;
+    margin-bottom: 56px;
+  }
+  .section-num {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-muted);
+    min-width: 40px;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px; letter-spacing: -0.01em;
+  }
+ 
+  /* PROBLEM / SLOGAN */
+  .slogan-block {
+    background: var(--accent);
+    color: #fff;
+    padding: 64px 48px;
+    text-align: center;
+  }
+  .slogan-block p {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3vw, 34px);
+    line-height: 1.3; font-style: italic;
+    max-width: 700px; margin: 0 auto 16px;
+  }
+  .slogan-block span {
+    font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase; opacity: 0.65;
+  }
+ 
+  /* SERVICES */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px; background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .service-card {
+    background: var(--paper);
+    padding: 36px 32px;
+    transition: background 0.2s;
+  }
+  .service-card:hover { background: var(--accent-pale); }
+  .service-icon {
+    width: 36px; height: 36px;
+    background: var(--accent-pale);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .service-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .service-card p {
+    font-size: 14px; color: var(--ink-soft);
+    line-height: 1.6; font-weight: 300;
+  }
+ 
+  /* SPECIALTIES */
+  .specialty-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0; border: 1px solid var(--rule);
+  }
+  .specialty-item {
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    display: flex; align-items: center; gap: 14px;
+    font-size: 15px; font-weight: 400;
+  }
+  .specialty-item:nth-child(even) { border-right: none; }
+  .specialty-item::before {
+    content: '';
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent-light);
+    flex-shrink: 0;
+  }
+ 
+  /* EHR */
+  .ehr-grid {
+    display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .ehr-tag {
+    padding: 8px 18px;
+    border: 1px solid var(--rule);
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    background: var(--paper);
+    transition: all 0.2s;
+  }
+  .ehr-tag:hover {
+    background: var(--accent);
+    color: #fff; border-color: var(--accent);
+  }
+ 
+  /* RESULTS */
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px; background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-bottom: 48px;
+  }
+  .result-card {
+    background: var(--paper-warm);
+    padding: 36px 28px;
+  }
+  .result-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; color: var(--accent);
+    margin-bottom: 8px; line-height: 1;
+  }
+  .result-desc {
+    font-size: 14px; color: var(--ink-soft);
+    line-height: 1.5; font-weight: 300;
+  }
+ 
+  /* CASE STUDY */
+  .case-study {
+    border-left: 3px solid var(--accent-light);
+    padding: 28px 32px;
+    background: var(--accent-pale);
+    margin-top: 16px;
+  }
+  .case-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent-light);
+    margin-bottom: 12px;
+  }
+  .case-study p {
+    font-size: 15px; color: var(--ink-soft);
+    line-height: 1.7; font-weight: 300;
+  }
+  .case-study strong { color: var(--ink); font-weight: 500; }
+ 
+  /* WHO I WORK WITH */
+  .who-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .who-card {
+    padding: 28px 32px;
+    border: 1px solid var(--rule);
+  }
+  .who-card h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; margin-bottom: 10px;
+  }
+  .who-card p {
+    font-size: 14px; color: var(--ink-soft);
+    line-height: 1.6; font-weight: 300;
+  }
+ 
+  /* CONTACT */
+  .contact-section {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 48px;
+    text-align: center;
+    border-top: none;
+    max-width: 100%;
+  }
+  .contact-section .section-title { color: var(--paper); }
+  .contact-section .section-num { color: var(--ink-muted); }
+  .contact-intro {
+    font-size: 17px; color: #b0aca5;
+    max-width: 560px; margin: 0 auto 48px;
+    font-weight: 300; line-height: 1.7;
+  }
+  .contact-grid {
+    display: flex; justify-content: center; gap: 40px;
+    flex-wrap: wrap; margin-bottom: 48px;
+  }
+  .contact-item {
+    text-align: left;
+  }
+  .contact-item-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #6a6a65;
+    margin-bottom: 6px;
+  }
+  .contact-item-value {
+    font-size: 15px; color: var(--paper);
+    font-weight: 400;
+  }
+  .contact-item-value a {
+    color: var(--paper); text-decoration: none;
+    border-bottom: 1px solid #3a3a35;
+    transition: border-color 0.2s;
+  }
+  .contact-item-value a:hover { border-color: var(--accent-light); }
+  .snapshot-cta {
+    display: inline-block;
+    border: 1px solid #3a3a35;
+    color: var(--paper); text-decoration: none;
+    padding: 14px 32px; font-size: 13px;
+    font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    margin-top: 8px;
+  }
+  .snapshot-cta:hover {
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+  }
+ 
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    border-top: 1px solid #1f1f1d;
+    padding: 24px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    max-width: 100%;
+  }
+  footer p { font-size: 12px; color: #4a4a46; }
+ 
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-label, .hero h1, .hero-sub, .hero-cta, .hero-stats {
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  .hero-label { animation-delay: 0.1s; }
+  .hero h1 { animation-delay: 0.2s; }
+  .hero-sub { animation-delay: 0.3s; }
+  .hero-cta { animation-delay: 0.4s; }
+  .hero-stats { animation-delay: 0.2s; }
+ 
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 60px 24px; gap: 48px; margin-top: 60px; }
+    section { padding: 60px 24px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .specialty-list { grid-template-columns: 1fr; }
+    .specialty-item:nth-child(even) { border-right: 1px solid var(--rule); }
+    .results-grid { grid-template-columns: 1fr; }
+    .who-grid { grid-template-columns: 1fr; }
+    .contact-section { padding: 60px 24px; }
+    footer { flex-direction: column; gap: 8px; text-align: center; padding: 24px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
-
 <body>
-
-<!-- HERO -->
-<header>
-  <div class="container" style="padding:100px 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;">
-
-    <div>
-      <h1>Remote Medical Billing & RCM Services for Behavioral & Mental Health Clinics in the US</h1>
-
-      <p><strong>Abhishek Kumar</strong> – Independent Medical Billing Contractor</p>
-
-      <p>
-        HIPAA-trained US healthcare RCM specialist helping behavioral and mental
-        health providers reduce denials, clean up AR, and improve cash flow.
-      </p>
-
-      <div>
-        <span class="badge">HIPAA-Trained</span>
-        <span class="badge">CPMB® Certified</span>
-        <span class="badge">US Healthcare RCM</span>
-      </div>
-
-      <a href="#contact" class="btn">Free Consultation</a>
-      <a href="https://www.fiverr.com/s/VY5KqYZ" target="_blank"
-         class="btn" style="background:#0ea5e9;margin-left:10px">
-         Hire via Fiverr
-      </a>
-    </div>
-
-    <div class="card" style="background:#ffffff;text-align:center;">
-      <h3>Certified & Compliant</h3>
-      <img src="cpmb-certificate.jpg"
-           alt="Certified Professional Medical Biller Certificate"
-           style="width:100%;border-radius:10px;margin:15px 0;">
-      <p>CPMB® – HIPAA Compliant Medical Billing</p>
-    </div>
-
+ 
+<nav>
+  <div class="nav-name">Abhishek Kumar</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#specialties">Specialties</a>
+    <a href="#contact">Contact</a>
   </div>
-</header>
-
-<!-- ABOUT -->
-<section>
-  <div class="container grid">
+</nav>
+ 
+<!-- HERO -->
+<div style="max-width:1100px; margin: 60px auto 0;">
+  <div class="hero">
     <div>
-      <h2>About Me</h2>
-      <p>
-        I am a <strong>Certified Professional Medical Biller (CPMB®)</strong> with
-        <strong>3+ years of hands-on US healthcare RCM experience</strong>.
-      </p>
-      <p>
-        I specialize in <strong>remote medical billing, behavioral health billing,
-        mental health billing, AR follow-up, and denial management</strong> for
-        US-based clinics and private practices.
-      </p>
-      <p>
-        <strong>Accuracy, payer compliance, and transparency</strong> — not volume billing.
-      </p>
+      <div class="hero-label">Revenue Integrity Consultant</div>
+      <h1>Revenue cycle is being automated.<br><em>Your revenue doesn't have to suffer for it.</em></h1>
+      <p class="hero-sub">I help US healthcare practices find and recover money that automation misses — underpayments, denial patterns, and compliance gaps hiding inside paid claims.</p>
+      <a href="#contact" class="hero-cta">Start with a Free Revenue Snapshot <span class="hero-cta-arrow">→</span></a>
     </div>
-
-    <div class="card">
-      <h3>Core Specialties</h3>
-      <ul>
-        <li>Behavioral & Mental Health Billing</li>
-        <li>Tele-Mental Health (POS 02 / POS 10)</li>
-        <li>Psychotherapy CPTs & Modifiers</li>
-        <li>AR Follow-up & Denial Appeals</li>
-        <li>HIPAA-Compliant Workflows</li>
-      </ul>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">22%</div>
+        <div class="stat-label">Average reduction in denial rates</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">45%</div>
+        <div class="stat-label">Reduction in AR over 90 days</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">$50K+</div>
+        <div class="stat-label">Recoverable revenue identified per engagement</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">3.6yr</div>
+        <div class="stat-label">US healthcare RCM experience</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- SLOGAN -->
+<div class="slogan-block">
+  <p>"Most practices don't have a denial problem. They have a prevention problem."</p>
+  <span>Abhishek Kumar — Revenue Integrity Consultant</span>
+</div>
+ 
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Where I Create Value</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">◎</div>
+      <h3>Denial Prevention</h3>
+      <p>Mapping denials back to broken workflows and fixing the source — not just appealing claims after the fact.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◈</div>
+      <h3>Underpayment Recovery</h3>
+      <p>Auditing paid claims against contracts to uncover silent leakage. The money that technically got paid — just paid wrong.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◇</div>
+      <h3>CMS Enrollment & Compliance</h3>
+      <p>Supporting SNF, Home Health, and Behavioral Health providers through CMS enrollment, survey readiness, and audit preparation.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">○</div>
+      <h3>AR Clean-Up & Follow-Up</h3>
+      <p>Systematic follow-up on aging AR buckets — identifying what is recoverable, why it aged, and how to prevent recurrence.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◉</div>
+      <h3>Payer Behavior Analysis</h3>
+      <p>Tracking payer-specific denial and underpayment patterns across Medicare, Medicaid, Medicare Advantage, and commercial plans.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">◐</div>
+      <h3>RCM Audit & Reporting</h3>
+      <p>Building denial dashboards, clean claim rate analysis, and payer behavior reports using Excel and SQL-based analysis.</p>
     </div>
   </div>
 </section>
-
-<!-- SERVICES -->
-<section style="background:#f1f5f9">
-  <div class="container">
-    <h2>Medical Billing & RCM Services</h2>
-    <div class="grid">
-      <div class="card">Eligibility & Benefits Verification</div>
-      <div class="card">ICD-10, CPT & Modifier Coding</div>
-      <div class="card">Claim Submission & Scrubbing</div>
-      <div class="card">Payment Posting (ERA / EOB)</div>
-      <div class="card">AR Follow-up & Denial Management</div>
-      <div class="card">Weekly Billing Reports</div>
+ 
+<!-- RESULTS -->
+<section id="results">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Measurable Results</h2>
+  </div>
+  <div class="results-grid">
+    <div class="result-card">
+      <div class="result-number">−28%</div>
+      <div class="result-desc">Denial rate reduction for a behavioral health practice in 90 days</div>
+    </div>
+    <div class="result-card">
+      <div class="result-number">+20%</div>
+      <div class="result-desc">Monthly collections increase — $78K to $94K — same practice</div>
+    </div>
+    <div class="result-card">
+      <div class="result-number">−12 days</div>
+      <div class="result-desc">AR days reduced from 42 to 30 through workflow changes</div>
+    </div>
+    <div class="result-card">
+      <div class="result-number">$100K+</div>
+      <div class="result-desc">Recovered in denied podiatry claims by identifying a single modifier pattern</div>
+    </div>
+    <div class="result-card">
+      <div class="result-number">−40%</div>
+      <div class="result-desc">Denial rate reduction and 21% collections increase for a hospital system in 90 days</div>
+    </div>
+    <div class="result-card">
+      <div class="result-number">95%</div>
+      <div class="result-desc">Clean claim rate achieved — up from 82% — for a multi-specialty practice</div>
     </div>
   </div>
-</secti
+ 
+  <div class="case-study">
+    <div class="case-label">Case Study — Podiatry Billing</div>
+    <p>A podiatry practice was losing hundreds of claims for bilateral heel spur removals (CPT 28119) with repeated <strong>"Invalid Modifier"</strong> denials. After pulling every operative note and reviewing the payer's bilateral surgery policy, I identified the mismatch: the payer required <strong>Modifier 50</strong> for bilateral symmetrical procedures, not LT/RT separately. One line change. <strong>100% of denied claims paid. $100,000+ recovered.</strong></p>
+  </div>
+</section>
+ 
+<!-- SPECIALTIES -->
+<section id="specialties">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Clinical Specialties</h2>
+  </div>
+  <div class="specialty-list">
+    <div class="specialty-item">Behavioral Health & Mental Health</div>
+    <div class="specialty-item">Primary Care & Internal Medicine</div>
+    <div class="specialty-item">Hospital Inpatient & Outpatient</div>
+    <div class="specialty-item">Emergency Medicine</div>
+    <div class="specialty-item">Skilled Nursing Facility (SNF)</div>
+    <div class="specialty-item">Home Health & Hospice</div>
+    <div class="specialty-item">Anesthesia</div>
+    <div class="specialty-item">Podiatry</div>
+    <div class="specialty-item">Dental Billing</div>
+    <div class="specialty-item">Nephrology</div>
+    <div class="specialty-item">Vascular & Surgical</div>
+    <div class="specialty-item">Medicare Advantage (MA) Denials</div>
+  </div>
+ 
+  <div style="margin-top: 56px;">
+    <div class="section-header" style="margin-bottom: 32px;">
+      <span class="section-num" style="min-width:auto; margin-right:0;"></span>
+      <h2 class="section-title" style="font-size:22px;">EHR & Billing Systems</h2>
+    </div>
+    <div class="ehr-grid">
+      <span class="ehr-tag">Epic</span>
+      <span class="ehr-tag">Athena</span>
+      <span class="ehr-tag">eClinicalWorks</span>
+      <span class="ehr-tag">NextGen</span>
+      <span class="ehr-tag">Waystar</span>
+      <span class="ehr-tag">Kareo</span>
+      <span class="ehr-tag">Harris CareTracker</span>
+      <span class="ehr-tag">PHI</span>
+      <span class="ehr-tag">Dentrix</span>
+      <span class="ehr-tag">Denticon</span>
+      <span class="ehr-tag">Open Dental</span>
+      <span class="ehr-tag">Eaglesoft</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- WHO I WORK WITH -->
+<section>
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Who I Work With</h2>
+  </div>
+  <div class="who-grid">
+    <div class="who-card">
+      <h4>Behavioral Health Practices</h4>
+      <p>Mental health, SUD, and outpatient BH practices dealing with MA denials, underpayments, and recurring authorization issues.</p>
+    </div>
+    <div class="who-card">
+      <h4>Home Health Agencies</h4>
+      <p>HHAs navigating CMS 855A enrollment, survey readiness, compliance documentation, and Conditions of Participation.</p>
+    </div>
+    <div class="who-card">
+      <h4>Skilled Nursing Facilities</h4>
+      <p>SNFs dealing with Medicare and MA billing complexity, ADR preparation, and audit-ready documentation workflows.</p>
+    </div>
+    <div class="who-card">
+      <h4>Multi-Specialty Practices</h4>
+      <p>Physician groups and hospital-based practices across primary care, surgery, emergency, and ancillary services needing RCM oversight.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="section-header" style="justify-content:center; margin-bottom:24px;">
+      <h2 class="section-title">Let's Talk</h2>
+    </div>
+    <p class="contact-intro">Start with a 15-minute Revenue Snapshot. Share one denial pattern or one aging AR bucket. I'll tell you whether it's recoverable, why it's happening, and one thing you can fix this week. No contract. No commitment.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-item-label">Email</div>
+        <div class="contact-item-value"><a href="mailto:Abhishek08kumar@outlook.com">Abhishek08kumar@outlook.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">LinkedIn</div>
+        <div class="contact-item-value"><a href="https://www.linkedin.com/in/abhishek-kumar-255815380" target="_blank">linkedin.com/in/abhishek-kumar</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Location</div>
+        <div class="contact-item-value">Remote — Available for US clients</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Certifications</div>
+        <div class="contact-item-value">CPMB® Certified · HIPAA Trained</div>
+      </div>
+    </div>
+    <a href="mailto:Abhishek08kumar@outlook.com?subject=Revenue Snapshot Request" class="snapshot-cta">Request a Free Revenue Snapshot</a>
+  </div>
+</section>
+ 
+<footer>
+  <p>© 2026 Abhishek Kumar — Revenue Integrity Consultant</p>
+  <p>CPMB® Certified · HIPAA Compliant · Remote · US Healthcare RCM</p>
+</footer>
+ 
+</body>
+</html>
+ 
